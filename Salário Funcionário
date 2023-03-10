@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+  public static void Main (string[] args) 
+  {
+    double numeroF;
+    double horasTrab;
+    double valorHora;
+    double salario;
+    
+    
+    Console.WriteLine("Diga o número do funcionário: ");
+    numeroF = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Quantas horas ele trabalhou?: ");
+    horasTrab = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Qual o valor da hora?: ");
+    valorHora = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("O número desse funcionário é " + numeroF);
+    
+    salario = horasTrab * valorHora;
+    
+    Console.WriteLine("O salário deste  funcionário é " + salario); 
+    
+  }
+}
